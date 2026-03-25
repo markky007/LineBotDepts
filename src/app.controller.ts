@@ -19,6 +19,7 @@ export class AppController {
   @Post()
   @HttpCode(200)
   async handleWebhook(@Body() body: any) {
+    console.log('ได้รับ Event จาก LINE แล้ว!:', JSON.stringify(body));
     const events = body.events;
 
     for (const event of events) {
