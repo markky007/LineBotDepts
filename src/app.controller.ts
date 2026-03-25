@@ -3,12 +3,11 @@ import { Client } from '@line/bot-sdk';
 import { createClient } from '@supabase/supabase-js';
 
 // 1. ใส่กุญแจของ LINE
+// 1. ใส่กุญแจของ LINE (เวอร์ชันแก้ทางเชื่อม)
 const lineClient = new Client({
   channelAccessToken: 'q9+ALn2fh5X1zktBVBZG0+IhXUmJoq2N2sLuPUFwQRGFDKkm0sRf0AgXC42PQNd0dsriBwg9QDHB/yC2KAcFV9bSNKnXZyfh97zqktgnP+naEmCegt7C+ybOWNzXxSpAGlz+jKEO/xOJsX3cW9vxYQdB04t89/1O/w1cDnyilFU=',
-  channelSecret:
-    '5c05fcaa11b9e95816b82767443fd56e ',
+  channelSecret: '5c05fcaa11b9e95816b82767443fd56e',
 });
-
 // 2. ใส่กุญแจของ Supabase
 const supabase = createClient(
   'https://dwevscxmhukozoyacedi.supabase.co',
